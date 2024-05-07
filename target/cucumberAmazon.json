@@ -1,0 +1,304 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4525658100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is a guest user",
+            "match": {
+              "location": "StepDefinition.Cart.user_is_a_guest_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T14:04:14.487Z",
+        "line": 14,
+        "name": "Add product to cart and verify cart functionality",
+        "description": "",
+        "id": "add-products-to-cart-and-verify-cart-functionality;add-product-to-cart-and-verify-cart-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3294718900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the \"One Plus 11 R\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "One Plus 11 R",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefinition.Cart.user_enters_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15070220000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User adds the product to cart",
+            "match": {
+              "location": "StepDefinition.Cart.user_adds_the_product_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2054491700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user updates the quantity",
+            "match": {
+              "location": "StepDefinition.Cart.user_updates_the_quantity()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddToCart"
+          }
+        ]
+      }
+    ],
+    "name": "Add products to cart and verify cart functionality",
+    "description": "",
+    "id": "add-products-to-cart-and-verify-cart-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddToCart.feature",
+    "tags": [
+      {
+        "name": "@AddToCart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Given that User is on the homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-05-07T14:04:39.543Z",
+        "line": 14,
+        "name": "User should be redirected to the signin page",
+        "description": "",
+        "id": "sign-up-to-amazon;user-should-be-redirected-to-the-signin-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3098258100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the sign in button",
+            "match": {
+              "location": "StepDefinition.Login.i_click_on_the_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81639700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be navigated to the signin page",
+            "match": {
+              "location": "StepDefinition.Login.i_should_be_navigated_to_the_signin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 321649900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Username as \"ishitasankrityayan@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ishitasankrityayan@gmail.com\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.Login.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5157350500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on continue button",
+            "match": {
+              "location": "StepDefinition.Login.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5043387200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should land on the \"success\" password page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.Login.i_should_land_on_the_password_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SignUpToAmazon"
+          }
+        ]
+      }
+    ],
+    "name": "Sign up to amazon",
+    "description": "",
+    "id": "sign-up-to-amazon",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": [
+      {
+        "name": "@SignUpToAmazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1208493800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the homepage of the application",
+            "match": {
+              "location": "StepDefinition.Sort.user_is_on_the_homepage_of_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T14:04:53.267Z",
+        "line": 13,
+        "name": "User searches for a product and verifies sorting functionality",
+        "description": "",
+        "id": "sort-products-test;user-searches-for-a-product-and-verifies-sorting-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9969214200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User searches for \"Women Tops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women Tops",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.Sort.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6154461900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User verifies that products are sorted by price from low to high",
+            "match": {
+              "location": "StepDefinition.Sort.user_verifies_that_products_are_sorted_by_price_from_low_to_high()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SortProductsTest"
+          }
+        ]
+      }
+    ],
+    "name": "Sort Products Test",
+    "description": "",
+    "id": "sort-products-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Sort.feature",
+    "tags": [
+      {
+        "name": "@SortProductsTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
